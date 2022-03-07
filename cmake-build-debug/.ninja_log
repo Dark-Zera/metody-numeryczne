@@ -1,0 +1,22 @@
+# ninja log v5
+8	612	6683506150657380	CMakeFiles/MN_lab1.dir/main.cpp.obj	1fcbb18f03665573
+6	606	6683496169060479	CMakeFiles/MN_lab1.dir/labOneMethods/GaussMethod.cpp.obj	ce1cc04a75e8b0e7
+648	816	6683505321790113	MN_lab1.exe	989747819a6bfbfd
+2	213	6683509001497629	build.ninja	dd76c57292c18ff5
+13	534	6683499571754301	CMakeFiles/MN_lab1.dir/utils/MatrixUtils.cpp.obj	9d5b47ae4699c42
+13	654	6683496169559120	CMakeFiles/MN_lab1.dir/labOneMethods/Derivative.cpp.obj	56485aa786140923
+8	436	6682240896744610	CMakeFiles/MN_lab1.dir/utils/PrintUtils.cpp.obj	80909875ea9903cd
+11	541	6683500236272302	CMakeFiles/MN_lab1.dir/labOneMethods/JordanMethod.cpp.obj	fc9729ab7a097921
+10	524	6683509115468133	CMakeFiles/MN_lab1.dir/utils/GeneralUtils.cpp.obj	2158ede8efaaea1d
+6	556	6683509115801178	CMakeFiles/MN_lab1.dir/main.cpp.obj	1fcbb18f03665573
+557	716	6683509117344886	MN_lab1.exe	ead71bf6f3b2fb17
+11	571	6683511211465713	CMakeFiles/MN_lab1.dir/utils/GeneralUtils.cpp.obj	2158ede8efaaea1d
+6	601	6683511211776359	CMakeFiles/MN_lab1.dir/main.cpp.obj	1fcbb18f03665573
+601	758	6683511213290244	MN_lab1.exe	ead71bf6f3b2fb17
+11	543	6683513702593148	CMakeFiles/MN_lab1.dir/labOneMethods/Derivative.cpp.obj	56485aa786140923
+14	597	6683513703141904	CMakeFiles/MN_lab1.dir/utils/GeneralUtils.cpp.obj	2158ede8efaaea1d
+7	613	6683513703301108	CMakeFiles/MN_lab1.dir/main.cpp.obj	1fcbb18f03665573
+614	785	6683513704943648	MN_lab1.exe	ead71bf6f3b2fb17
+7	477	6683516787093204	CMakeFiles/MN_lab1.dir/labOneMethods/GaussMethod.cpp.obj	ce1cc04a75e8b0e7
+12	512	6683516787473826	CMakeFiles/MN_lab1.dir/labOneMethods/Derivative.cpp.obj	56485aa786140923
+513	675	6683516788958935	MN_lab1.exe	ead71bf6f3b2fb17
