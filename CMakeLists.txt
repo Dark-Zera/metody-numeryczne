@@ -3,7 +3,7 @@ project(metody-numeryczne)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(MN_lab1 main.cpp
+add_executable(metody-numeryczne main.cpp
         labOneMethods/GaussMethod.cpp labOneMethods/JordanMethod.cpp labOneMethods/Derivative.cpp
         utils/PrintUtils.cpp utils/MatrixUtils.cpp utils/GeneralUtils.cpp)
 
