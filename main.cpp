@@ -7,7 +7,9 @@
 using namespace constants;
 
 int main() {
+    //LabOne
     GeneralUtils::invokeMethodsOnGeneratedData(GaussMethod::gaussMethod, "Gauss method");
     GeneralUtils::invokeMethodsOnGeneratedData(JordanMethod::jordanMethod, "Jordan method");
+    //LabTwo
     return 0;
 }
