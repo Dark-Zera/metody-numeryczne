@@ -12,5 +12,5 @@ void Derivative::derivativeMethod(float A[][constants::ArraySize], float b[const
     for (int index = 0; index < constants::ArraySize; index++) {
         derivative += sqrt(pow(multipliedVector[index] - b[index], 2));
     }
-    std::cout << "Derative is equal: " << 0.2 * sqrt(derivative) << std::endl << std::endl;
+    std::cout << "Derative is equal: " << 0.2 * sqrt(derivative) << std::endl;
 }
