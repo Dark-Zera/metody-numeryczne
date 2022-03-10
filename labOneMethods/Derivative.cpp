@@ -12,5 +12,5 @@ void Derivative::derivativeMethod(double constA[][constants::ArraySize], double 
     for (int index = 0; index < constants::ArraySize; index++) {
         derivative += pow(c[index] - constb[index], 2);
     }
-    std::cout << "Derative is equal: " << 0.2 * sqrt(derivative) << std::endl;
+    std::cout <<  0.2 * sqrt(derivative) << std::endl;
 }

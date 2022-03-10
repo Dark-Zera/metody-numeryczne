@@ -5,11 +5,10 @@
 #include "GeneralUtils.h"
 
 void GeneralUtils::invokeMethodsOnGeneratedData(std::function<void(double [][constants::ArraySize], double [constants::ArraySize], double [constants::ArraySize])> func, std::string funcName) {
-    std::cout << funcName << ": ";
+    std::cout << funcName << ": " << std::endl;
     double q = 0.2;
     double step = 0.2001;
-//    for (int iterations = 0; double(iterations) * step < 5 - q; iterations++) {
-    for (int iterations = 1; iterations < 2; iterations++) {
+    for (int iterations = 0; double(iterations) * step < 5 - q; iterations++) {
         double A[constants::ArraySize][constants::ArraySize] = {{0.0002, 1, 6,  9, 10},
                                                                {0.0002, 1, 6,  9, 10},
                                                                {1,      6, 6,  8, 6},

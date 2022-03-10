@@ -36,9 +36,8 @@ void MatrixUtils::makeMatrixDiagonal(double A[][constants::ArraySize], double b[
                 }
             }
         }
-        PrintUtils::printMatrix(A);
     }
-    PrintUtils::printVector(b);
+
 }
 
 void MatrixUtils::multiplyVectorByMatrix(double A[][constants::ArraySize], double x[constants::ArraySize], double c[constants::ArraySize]) {
@@ -47,5 +46,4 @@ void MatrixUtils::multiplyVectorByMatrix(double A[][constants::ArraySize], doubl
             c[row] += A[row][column] * x[column];
         }
     }
-    PrintUtils::printVector(c);
 }
