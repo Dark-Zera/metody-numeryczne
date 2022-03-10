@@ -9,7 +9,7 @@
 
 class GaussMethod {
 public:
-    static void gaussMethod(float A[][constants::ArraySize], float b[constants::ArraySize], float x[constants::ArraySize]);
+    static void gaussMethod(double A[][constants::ArraySize], double b[constants::ArraySize], double x[constants::ArraySize]);
 };
 
 

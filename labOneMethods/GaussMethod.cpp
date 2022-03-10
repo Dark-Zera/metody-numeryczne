@@ -4,12 +4,13 @@
 
 #include "GaussMethod.h"
 
-void GaussMethod::gaussMethod(float A[][constants::ArraySize], float b[constants::ArraySize], float x[constants::ArraySize]) {
+void GaussMethod::gaussMethod(double A[][constants::ArraySize], double b[constants::ArraySize], double x[constants::ArraySize]) {
     MatrixUtils::makeMatrixTriangular(A, b);
     for (int row = constants::ArraySize - 1; row >= 0; row--) {
+        double sum = 0;
         for (int column = constants::ArraySize - 1; column > row; column--) {
-            b[row] -= A[row][column] * x[column];
+            sum += A[row][column] * x[column];
         }
-        x[row] = b[row] / A[row][row];
+        x[row] = b[row] - sum / A[row][row];
     }
 }

@@ -4,13 +4,13 @@
 
 #include "Derivative.h"
 
-void Derivative::derivativeMethod(float A[][constants::ArraySize], float b[constants::ArraySize], float x[constants::ArraySize]) {
-    float derivative = 0;
-    float multipliedVector[constants::ArraySize] = {0,0,0,0,0};
-    MatrixUtils::multiplyVectorByMatrix(A, x, multipliedVector);
+void Derivative::derivativeMethod(double constA[][constants::ArraySize], double constb[constants::ArraySize], double x[constants::ArraySize]) {
+    double derivative = 0;
+    double c[constants::ArraySize] = {0, 0, 0, 0, 0};
+    MatrixUtils::multiplyVectorByMatrix(constA, x, c);
 
     for (int index = 0; index < constants::ArraySize; index++) {
-        derivative += sqrt(pow(multipliedVector[index] - b[index], 2));
+        derivative += pow(c[index] - constb[index], 2);
     }
     std::cout << "Derative is equal: " << 0.2 * sqrt(derivative) << std::endl;
 }

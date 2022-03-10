@@ -9,7 +9,7 @@
 
 class JordanMethod {
 public:
-    static void jordanMethod(float A[][constants::ArraySize], float b[constants::ArraySize], float x[constants::ArraySize]);
+    static void jordanMethod(double A[][constants::ArraySize], double b[constants::ArraySize], double x[constants::ArraySize]);
 };
 
 

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void PrintUtils::printMatrix(float matrix[][constants::ArraySize], string prefix = "MATRIX") {
+void PrintUtils::printMatrix(double matrix[][constants::ArraySize], string prefix) {
     cout << prefix << ": [" << endl;
     for (int i = 0; i < constants::ArraySize; i++) {
         cout << "[";
@@ -18,7 +18,7 @@ void PrintUtils::printMatrix(float matrix[][constants::ArraySize], string prefix
     cout << "]" << endl << endl;
 }
 
-void PrintUtils::printVector(float vector[constants::ArraySize], string prefix = "Vector") {
+void PrintUtils::printVector(double vector[constants::ArraySize], string prefix) {
     cout << prefix << ": [" << endl;
     for (int i = 0; i < constants::ArraySize - 1; i++) {
         cout << vector[i] << ", ";

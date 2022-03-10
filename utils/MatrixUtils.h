@@ -3,15 +3,16 @@
 //
 
 #include "../consts/Constants.h"
+#include "PrintUtils.h"
 #include "iostream"
 #ifndef MN_LAB1_MATRIXUTILS_H
 #define MN_LAB1_MATRIXUTILS_H
 
 class MatrixUtils {
 public:
-    static void makeMatrixTriangular(float A[][constants::ArraySize], float b[constants::ArraySize]);
-    static void makeMatrixDiagonal(float A[][constants::ArraySize], float b[constants::ArraySize]);
-    static void multiplyVectorByMatrix(float A[][constants::ArraySize], float x[constants::ArraySize], float multipliedVector[constants::ArraySize]);
+    static void makeMatrixTriangular(double A[][constants::ArraySize], double b[constants::ArraySize]);
+    static void makeMatrixDiagonal(double A[][constants::ArraySize], double b[constants::ArraySize]);
+    static void multiplyVectorByMatrix(double A[][constants::ArraySize], double x[constants::ArraySize], double c[constants::ArraySize]);
 };
 
 

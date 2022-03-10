@@ -10,7 +10,7 @@
 
 class Derivative {
 public:
-    static void derivativeMethod(float A[][constants::ArraySize], float b[constants::ArraySize], float x[constants::ArraySize]);
+    static void derivativeMethod(double constA[][constants::ArraySize], double constb[constants::ArraySize], double x[constants::ArraySize]);
 };
 
 

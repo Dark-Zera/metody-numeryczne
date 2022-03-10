@@ -4,8 +4,8 @@
 
 #include "MatrixUtils.h"
 
-void MatrixUtils::makeMatrixTriangular(float A[][constants::ArraySize], float b[constants::ArraySize]) {
-    float factor;
+void MatrixUtils::makeMatrixTriangular(double A[][constants::ArraySize], double b[constants::ArraySize]) {
+    double factor;
 
     for (int column = 0; column < constants::ArraySize; column++) {
         for (int row = column + 1; row < constants::ArraySize; row++) {
@@ -18,8 +18,8 @@ void MatrixUtils::makeMatrixTriangular(float A[][constants::ArraySize], float b[
     }
 }
 
-void MatrixUtils::makeMatrixDiagonal(float A[][constants::ArraySize], float b[constants::ArraySize]) {
-    float factor;
+void MatrixUtils::makeMatrixDiagonal(double A[][constants::ArraySize], double b[constants::ArraySize]) {
+    double factor;
 
     for (int column = 0; column < constants::ArraySize; column++) {
         factor = A[column][column];
@@ -36,13 +36,16 @@ void MatrixUtils::makeMatrixDiagonal(float A[][constants::ArraySize], float b[co
                 }
             }
         }
+        PrintUtils::printMatrix(A);
     }
+    PrintUtils::printVector(b);
 }
 
-void MatrixUtils::multiplyVectorByMatrix(float A[][constants::ArraySize], float x[constants::ArraySize], float multipliedVector[constants::ArraySize]) {
+void MatrixUtils::multiplyVectorByMatrix(double A[][constants::ArraySize], double x[constants::ArraySize], double c[constants::ArraySize]) {
     for (int row = 0; row < constants::ArraySize; row++) {
         for (int column = 0; column < constants::ArraySize; column++) {
-            multipliedVector[row] += A[row][column] * x[column];
+            c[row] += A[row][column] * x[column];
         }
     }
+    PrintUtils::printVector(c);
 }
