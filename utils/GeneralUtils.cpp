@@ -9,6 +9,7 @@ void GeneralUtils::invokeMethodsOnGeneratedData(std::function<void(double [][con
     double q = 0.2;
     double step = 0.2001;
     for (int iterations = 0; double(iterations) * step < 5 - q; iterations++) {
+//    for (int iterations = 0; iterations < 1; iterations++) {
         double A[constants::ArraySize][constants::ArraySize] = {{0.0002, 1, 6,  9, 10},
                                                                {0.0002, 1, 6,  9, 10},
                                                                {1,      6, 6,  8, 6},
@@ -26,6 +27,6 @@ void GeneralUtils::invokeMethodsOnGeneratedData(std::function<void(double [][con
         constA[0][0] *= (q + step * double(iterations));
 
         func(A, b, x);
-        Derivative::derivativeMethod(constA,constb,x);
+        Derivative::derivativeMethod(constA, constb, x);
     }
 }
