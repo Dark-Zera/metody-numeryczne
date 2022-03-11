@@ -19,7 +19,7 @@ void PrintUtils::printMatrix(double matrix[][constants::ArraySize], string prefi
 }
 
 void PrintUtils::printVector(double vector[constants::ArraySize], string prefix) {
-    cout << prefix << ": [" << endl;
+    cout << prefix << ": [";
     for (int i = 0; i < constants::ArraySize - 1; i++) {
         cout << vector[i] << ", ";
     }

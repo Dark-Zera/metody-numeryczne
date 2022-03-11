@@ -32,7 +32,7 @@ void MatrixUtils::countLUMatrix(double L[][constants::ArraySize], double U[][con
 }
 
 void MatrixUtils::copyMatrixValuesToMatrix(double assignTo[][constants::ArraySize], double assignFrom[][constants::ArraySize]) {
-    for (int column = 0; column < constants::ArraySize - 1; column++) {
+    for (int column = 0; column < constants::ArraySize; column++) {
         for (int row = 0; row < constants::ArraySize; row++) {
             assignTo[row][column] = assignFrom[row][column];
         }

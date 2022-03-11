@@ -5,6 +5,7 @@
 #include "PrintUtils.h"
 #include "MatrixUtils.h"
 #include "JordanMethod.h"
+#include "JordanMethod.h"
 #include <cmath>
 #ifndef METODY_NUMERYCZNE_UARLMETHOD_H
 #define METODY_NUMERYCZNE_UARLMETHOD_H
