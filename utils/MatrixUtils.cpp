@@ -47,3 +47,11 @@ void MatrixUtils::multiplyVectorByMatrix(double A[][constants::ArraySize], doubl
         }
     }
 }
+
+void MatrixUtils::makeMatrixIdentical(double A[][constants::ArraySize]) {
+    for (int row = 0; row < constants::ArraySize; row++) {
+        for (int column = 0; column < constants::ArraySize; column++) {
+            A[row][column] = (column == row) ? 1 : 0;
+        }
+    }
+}
