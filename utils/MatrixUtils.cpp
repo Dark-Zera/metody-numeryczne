@@ -19,6 +19,26 @@ void MatrixUtils::makeMatrixTriangular(double A[][constants::ArraySize], double 
     }
 }
 
+void MatrixUtils::countLUMatrix(double L[][constants::ArraySize], double U[][constants::ArraySize]) {
+    for (int column = 0; column < constants::ArraySize - 1; column++) {
+        for (int row = column + 1; row < constants::ArraySize; row++) {
+            L[row][column] = U[row][column] / U[column][column];
+
+            for (int columnToSubtract = column; columnToSubtract < constants::ArraySize; columnToSubtract++) {
+                U[row][columnToSubtract] -= U[column][columnToSubtract] * L[row][column];
+            }
+        }
+    }
+}
+
+void MatrixUtils::copyMatrixValuesToMatrix(double assignTo[][constants::ArraySize], double assignFrom[][constants::ArraySize]) {
+    for (int column = 0; column < constants::ArraySize - 1; column++) {
+        for (int row = 0; row < constants::ArraySize; row++) {
+            assignTo[row][column] = assignFrom[row][column];
+        }
+    }
+}
+
 void MatrixUtils::makeMatrixDiagonal(double A[][constants::ArraySize], double b[constants::ArraySize]) {
     double factor;
 
