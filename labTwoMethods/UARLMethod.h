@@ -4,7 +4,7 @@
 #include "Constants.h"
 #include "PrintUtils.h"
 #include "MatrixUtils.h"
-#include "GaussMethod.h"
+#include "JordanMethod.h"
 #include <cmath>
 #ifndef METODY_NUMERYCZNE_UARLMETHOD_H
 #define METODY_NUMERYCZNE_UARLMETHOD_H

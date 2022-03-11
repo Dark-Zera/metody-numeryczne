@@ -60,6 +60,14 @@ void MatrixUtils::makeMatrixDiagonal(double A[][constants::ArraySize], double b[
     }
 }
 
+void MatrixUtils::multiplyMatrixByMatrix(double A[][constants::ArraySize], double B[][constants::ArraySize], double C[][constants::ArraySize]) {
+    for (int row = 0; row < constants::ArraySize; row++) {
+        for (int column = 0; column < constants::ArraySize; column++) {
+//            multiplyVectorByMatrix(A, B[])
+        }
+    }
+}
+
 void MatrixUtils::multiplyVectorByMatrix(double A[][constants::ArraySize], double x[constants::ArraySize], double c[constants::ArraySize]) {
     for (int row = 0; row < constants::ArraySize; row++) {
         for (int column = 0; column < constants::ArraySize; column++) {

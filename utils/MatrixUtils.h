@@ -16,6 +16,7 @@ public:
     static void makeMatrixDiagonal(double A[][constants::ArraySize], double b[constants::ArraySize]);
     static void makeMatrixIdentical(double A[][constants::ArraySize]);
     static void multiplyVectorByMatrix(double A[][constants::ArraySize], double x[constants::ArraySize], double c[constants::ArraySize]);
+    static void multiplyMatrixByMatrix(double A[][constants::ArraySize], double B[][constants::ArraySize], double C[][constants::ArraySize]);
 };
 
 

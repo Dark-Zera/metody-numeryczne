@@ -23,4 +23,24 @@ void UARLMethod::method() {
     double U[constants::ArraySize][constants::ArraySize];
     MatrixUtils::copyMatrixValuesToMatrix(U, A);
     MatrixUtils::countLUMatrix(L, U);
+
+    double z[constants::ArraySize];
+    for (int row = 0; row < constants::ArraySize; row++) {
+        z[row] = y[row];
+        for (int column = 0; column < row; column++) {
+            z[row] += L[row][column] * y[column];
+        }
+    }
+
+    double secondC[constants::ArraySize];
+    for (int row = constants::ArraySize - 1; row >= 0; row--) {
+        secondC[row] = z[row];
+        for (int column = constants::ArraySize - 1; column > row; column--) {
+            secondC[row] -= U[row][column] * z[column];
+        }
+        secondC[row] /= U[row][row];
+    }
+
+    PrintUtils::printVector(c, "Original c");
+    PrintUtils::printVector(secondC, "Second c");
 }
