@@ -3,9 +3,7 @@ project(metody-numeryczne)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(metody-numeryczne main.cpp
-        labOneMethods/GaussMethod.cpp labOneMethods/JordanMethod.cpp labOneMethods/Derivative.cpp
-        labTwoMethods/UARLMethod.cpp
-        utils/PrintUtils.cpp utils/MatrixUtils.cpp utils/GeneralUtils.cpp)
+file(GLOB_RECURSE sources "consts/*.cpp" "utils/*.cpp" "labOneMethods/*.cpp" "labTwoMethods/*.cpp" "labThreeMethods/*.cpp")
+include_directories(consts utils labOneMethods labTwoMethods labThreeMethods)
 
-include_directories(utils labOneMethods consts)
+add_executable(metody-numeryczne main.cpp ${sources})
