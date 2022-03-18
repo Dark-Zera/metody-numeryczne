@@ -16,22 +16,24 @@ void Gradient::method() {
     double y[constants::ArraySizeLabThree];
     int iteration;
 
-    for (int startingXValue= 0; startingXValue <= 1; startingXValue++) {
+    for (int startingXValue = 0; startingXValue <= 1; startingXValue++) {
         fillA(A);
-        PrintUtils::printMatrix(A, "Matrix A");
         fillB(b);
         fillX(x, startingXValue);
         iteration = 0;
-        do {
+
             multiplyVectorXByMatrixA(A, x, y);
             for (int index = 0; index < constants::ArraySizeLabThree; index++) {
                 double licznik = 0;
                 r[index] = b[index] - y[index];
                 licznik += pow(r[index], 2);
-            };
 
+            }
+            for (int index = 0; index < constants::ArraySizeLabThree; index++) {
+
+            }
             iteration++;
-        } while (iteration == 0);
+
     }
 };
 
