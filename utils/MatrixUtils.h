@@ -10,13 +10,13 @@
 
 class MatrixUtils {
 public:
-    static void makeMatrixTriangular(double A[][constants::ArraySizeLabTwo], double b[constants::ArraySizeLabTwo]);
-    static void countLUMatrix(double L[][constants::ArraySizeLabTwo], double U[][constants::ArraySizeLabTwo]);
-    static void copyMatrixValuesToMatrix(double assignTo[][constants::ArraySizeLabTwo], double assignFrom[][constants::ArraySizeLabTwo]);
-    static void makeMatrixDiagonal(double A[][constants::ArraySizeLabTwo], double b[constants::ArraySizeLabTwo]);
-    static void makeMatrixIdentical(double A[][constants::ArraySizeLabTwo]);
-    static void multiplyVectorByMatrix(double A[][constants::ArraySizeLabTwo], double x[constants::ArraySizeLabTwo], double c[constants::ArraySizeLabTwo]);
-    static void multiplyMatrixByMatrix(double A[][constants::ArraySizeLabTwo], double B[][constants::ArraySizeLabTwo], double C[][constants::ArraySizeLabTwo]);
+    static void makeMatrixTriangular(double A[][constants::ArraySizeLabOne], double b[constants::ArraySizeLabOne]);
+    static void countLUMatrix(double L[][constants::ArraySizeLabOne], double U[][constants::ArraySizeLabOne]);
+    static void copyMatrixValuesToMatrix(double assignTo[][constants::ArraySizeLabOne], double assignFrom[][constants::ArraySizeLabOne]);
+    static void makeMatrixDiagonal(double A[][constants::ArraySizeLabOne], double b[constants::ArraySizeLabOne]);
+    static void makeMatrixIdentical(double A[][constants::ArraySizeLabOne]);
+    static void multiplyVectorByMatrix(double A[][constants::ArraySizeLabOne], double x[constants::ArraySizeLabOne], double c[constants::ArraySizeLabOne]);
+    static void multiplyMatrixByMatrix(double A[][constants::ArraySizeLabOne], double B[][constants::ArraySizeLabOne], double C[][constants::ArraySizeLabOne]);
 };
 
 
