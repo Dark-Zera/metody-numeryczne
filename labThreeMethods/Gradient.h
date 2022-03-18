@@ -3,7 +3,6 @@
 //
 #include "Constants.h"
 #include "cmath"
-#include "PrintUtils.h"
 
 #ifndef METODY_NUMERYCZNE_GRADIENT_H
 #define METODY_NUMERYCZNE_GRADIENT_H

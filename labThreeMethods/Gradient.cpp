@@ -29,8 +29,8 @@ void Gradient::method() {
                 licznik += pow(r[index], 2);
 
             }
-            for (int index = 0; index < constants::ArraySizeLabThree; index++) {
-
+            for (int index = 0; index < constants::ArraySizeLabThree - 1; index++) {
+                x[index + 1] = x[index];
             }
             iteration++;
 
