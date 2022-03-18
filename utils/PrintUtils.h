@@ -11,8 +11,8 @@ using namespace std;
 
 class PrintUtils {
 public:
-    static void printMatrix(double matrix[][constants::ArraySize], string prefix = "Matrix");
-    static void printVector(double vector[constants::ArraySize], string prefix = "Vector");
+    static void printMatrix(double matrix[][constants::ArraySizeLabTwo], string prefix = "Matrix");
+    static void printVector(double vector[constants::ArraySizeLabTwo], string prefix = "Vector");
 };
 
 

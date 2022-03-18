@@ -6,22 +6,22 @@
 
 using namespace std;
 
-void PrintUtils::printMatrix(double matrix[][constants::ArraySize], string prefix) {
+void PrintUtils::printMatrix(double matrix[][constants::ArraySizeLabTwo], string prefix) {
     cout << prefix << ": [" << endl;
-    for (int i = 0; i < constants::ArraySize; i++) {
+    for (int i = 0; i < constants::ArraySizeLabTwo; i++) {
         cout << "[";
-        for (int j = 0; j < constants::ArraySize - 1; j++) {
+        for (int j = 0; j < constants::ArraySizeLabTwo - 1; j++) {
             cout << matrix[i][j] << ", ";
         }
-        cout << matrix[i][constants::ArraySize - 1] << "]" << endl;
+        cout << matrix[i][constants::ArraySizeLabTwo - 1] << "]" << endl;
     }
     cout << "]" << endl << endl;
 }
 
-void PrintUtils::printVector(double vector[constants::ArraySize], string prefix) {
+void PrintUtils::printVector(double vector[constants::ArraySizeLabTwo], string prefix) {
     cout << prefix << ": [";
-    for (int i = 0; i < constants::ArraySize - 1; i++) {
+    for (int i = 0; i < constants::ArraySizeLabTwo - 1; i++) {
         cout << vector[i] << ", ";
     }
-    cout << vector[constants::ArraySize - 1] << "]" << endl << endl;
+    cout << vector[constants::ArraySizeLabTwo - 1] << "]" << endl << endl;
 }

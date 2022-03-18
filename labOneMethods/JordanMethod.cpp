@@ -3,9 +3,9 @@
 //
 
 #include "JordanMethod.h"
-void JordanMethod::jordanMethod(double A[][constants::ArraySize], double b[constants::ArraySize], double x[constants::ArraySize]) {
+void JordanMethod::jordanMethod(double A[][constants::ArraySizeLabOne], double b[constants::ArraySizeLabOne], double x[constants::ArraySizeLabOne]) {
     MatrixUtils::makeMatrixDiagonal(A,b);
-    for (int index = 0; index < constants::ArraySize; index++) {
+    for (int index = 0; index < constants::ArraySizeLabOne; index++) {
         x[index] = b[index];
     }
 }

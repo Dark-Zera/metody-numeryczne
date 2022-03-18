@@ -7,6 +7,8 @@
 
 namespace constants
 {
-    constexpr int ArraySize = 6;
+    constexpr int ArraySizeLabOne = 5;
+    constexpr int ArraySizeLabTwo = 6;
+    constexpr int ArraySizeLabThree = 1000;
 }
 #endif

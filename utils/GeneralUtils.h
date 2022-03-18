@@ -11,7 +11,7 @@
 
 class GeneralUtils {
 public:
-    static void invokeMethodsOnGeneratedData(std::function<void(double [][constants::ArraySize], double [constants::ArraySize], double [constants::ArraySize])> func, std::string funcName);
+    static void invokeMethodsOnGeneratedData(std::function<void(double [][constants::ArraySizeLabOne], double [constants::ArraySizeLabOne], double [constants::ArraySizeLabOne])> func, std::string funcName);
 };
 
 
