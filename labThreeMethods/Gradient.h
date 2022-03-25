@@ -2,6 +2,7 @@
 // Created by Zera on 3/18/2022.
 //
 #include "Constants.h"
+#include "PrintUtils.h"
 #include "cmath"
 
 #ifndef METODY_NUMERYCZNE_GRADIENT_H

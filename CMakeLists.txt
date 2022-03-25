@@ -7,3 +7,6 @@ file(GLOB_RECURSE sources "consts/*.cpp" "utils/*.cpp" "labOneMethods/*.cpp" "la
 include_directories(consts utils labOneMethods labTwoMethods labThreeMethods)
 
 add_executable(metody-numeryczne main.cpp ${sources})
+
+MATH(EXPR stack_size "20 * 1000 * 1000")
+set(CMAKE_EXE_LINKER_FLAGS "-Wl,--stack,${stack_size}")
